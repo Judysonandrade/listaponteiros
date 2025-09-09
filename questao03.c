@@ -44,11 +44,15 @@ int main(){
     // Invalido, pois o operador * tenta acessar um valor no endereço de memoria em que &j ja foi armazenado 
     // e &j não é um endereço de memoria valido e i tenta acessar esse valor que não foi apontado por nenhum endereço de memoria valido.
     // * e & ou precisa armazenar ou precisa apontar para um endereço de alguma variável.
-    
+
     i = (*&)j;
     printf("%d\n", i);
 
     // para consertar esse acima seria.
+    i = *&j;
+    printf("%d\n", i);
+
+    // valido, pois o operador * aponta para o valor de j que foi armazenado pelo & e atribui esse valor a i
     i = *&j;
     printf("%d\n", i);
     
