@@ -72,7 +72,7 @@ int main(){
     // valido, pois o operador *p aponta para o valor de i que é 5 e depois incrementa esse valor para 6
     // e o operador *q aponta para o valor de j que é 10, e faz a soma de 6 + 10 e atribui esse valor a i
     i = (*p)++ + *q;
-    printf("Valor aqui: %d\n", i);
+    printf("Valor aqui:%d\n", i);
    
     
     return 0;
