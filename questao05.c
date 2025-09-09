@@ -4,13 +4,7 @@
 
  void funcao(char** str){ // função tem como parametro um ponteiro para ponteiro de char na variavel str
     // a variavel str que esta apontando para o endereço do ponteiro str incrementa 1 posição
-    while(**str != NULL){
-          // so da movento o ponteiro para frente, mas não altera o valor do ponteiro str na main
-        printf("%s\n", *str); 
-        str++;
-    } // enquanto o valor apontado por str for diferente de '\0' (final da string  )
-    //str++; // so da movento o ponteiro para frente, mas não altera o valor do ponteiro str na main
-    //printf("%s\n", *str); // imprime a string armazenada no endereço de memoria apontado por str
+    str++; // so da movento o ponteiro para frente, mas não altera o valor do ponteiro str na main
     // A função função não altera o valor do ponteiro str na função main, pois a função recebe uma cópia do endereço do ponteiro str
     // e o incremento de str++ altera apenas essa cópia local, não afetando o ponteiro original na main.
     // para alterar o valor do ponteiro str na main, seria necessário usar *str++ ou similar para modificar o conteúdo apontado pelo ponteiro.
