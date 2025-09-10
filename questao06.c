@@ -12,6 +12,8 @@ int main(){
 
     char *a[] = {"ab", "cd", "ef", "gh", "ij", "kl"}; // array de ponteiros para char
     funcao(a); // chama a função passando o array de ponteiros a
-    // a saida vai ser "cd" pois a função acessa o segundo elemento do array original
+    // a saida vai ser "gh" porque t que está atribuito na função faz a operação de receber p que é o primeiro valor do array
+    // incrementa em 4 bytes, ou seja ele vai pra cd, ef, gh, ij mas logo em seguida o [-1] faz ele voltar um elemento, ou seja
+    // ele volta para gh e é isso que é impresso
     return 0; 
 }
