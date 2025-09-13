@@ -24,9 +24,9 @@ struct teste{
 int main(){
     struct teste s; // Declaração de um tipo de struct S
 
-    s.x = 3;
+    s.x = 3; // atribuir um valor a x
 
-    strcpy(s.nome, "Jose");
+    strcpy(s.nome, "Jose"); // atribuir Jose a nome
 
     printf("%d\n", s.x);
 
