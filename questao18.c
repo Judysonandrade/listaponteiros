@@ -8,20 +8,20 @@
 // dinâmica de comportamento em tempo de execução.
 
 
-int operacoes(int a, int b){ // funão que faz operações dependendo dos valores de a e b
-    if(a>b){ // se a maior que b some
-        return a+b;
-    } else if(a==b){ // se a igual b multiplica
-        return a*b;
+int operacoes(int *a, int *b){ // funão que faz operações dependendo dos valores de a e b
+    if(*a>*b){ // se a maior que b some
+        return *a+*b;
+    } else if(*a==*b){ // se a igual b multiplica
+        return *a * *b;
     } else { // se b maior que a subtrai
-        return a-b;
+        return *a - *b;
     }
 }
 
 
 int main(){
     int a, b, resultado; // declaração de variaveis a, b e resultado
-    int (*p)(int, int); // declaração de um ponteiro para função que recebe dois inteiros e retorna um inteiro
+    int (*p)(int *, int *); // declaração de um ponteiro para função que recebe dois inteiros e retorna um inteiro
     printf("Digite dois numeros: \n "); // prompt para o usuario
     scanf("%d %d", &a, &b);
 
