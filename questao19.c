@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void crescente(float v[], int n){ 
+void crescente(float *v, int n){ 
     float aux;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
